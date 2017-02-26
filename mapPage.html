@@ -9,7 +9,196 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
+
+  
+ 
+	
+	<script src="./js/materialize.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6NWluoaLxqxk7y59RhHflfmwSekKwtM0"></script>
+
+	  <script>
+	
+
+	/*
+ * 5 ways to customize the Google Maps infowindow
+ * 2015 - en.marnoto.com
+ * http://en.marnoto.com/2014/09/5-formas-de-personalizar-infowindow.html
+*/
+
+// map center
+var center = new google.maps.LatLng(40.9124, -73.1234);
+
+// marker position
+var factory = new google.maps.LatLng(40.9124, -73.1234);
+
+
+  
+  var image = {
+  url: "mapIcons/stony.png",
+  size: new google.maps.Size(71, 71),
+  origin: new google.maps.Point(0, 0),
+  anchor: new google.maps.Point(17, 34),
+  scaledSize: new google.maps.Size(65, 55)
+};
+  
+    var suffolk = {
+  url: "mapIcons/suffolk.jpg",
+  size: new google.maps.Size(71, 71),
+  origin: new google.maps.Point(0, 0),
+  anchor: new google.maps.Point(17, 34),
+  scaledSize: new google.maps.Size(65, 55)
+};
+
+
+ var farmingdale = {
+  url: "mapIcons/farmingdale.jpg",
+  size: new google.maps.Size(71, 71),
+  origin: new google.maps.Point(0, 0),
+  anchor: new google.maps.Point(17, 34),
+  scaledSize: new google.maps.Size(65, 55)
+};
+
+function initialize() {
+  var mapOptions = {
+    center: center,
+    zoom: 13,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+
+  // InfoWindow content
+  var content = '<div id="iw-container">' +
+                    '<div class="iw-title">Stony Brook University</div>' +
+                    '<div class="iw-content">' +
+                      '<div class="iw-subTitle">Welcome Future Seawolves</div>' +
+                      '<img src="mapIcons/logo.png" alt="Stony Brook University." height="115" width="83">' +
+                      '<p> Stony Brook is home to an exceptionally diverse student body of more than 25,700 high-achieving students — including more than 17,000 undergraduates — from nearly all 50 states and more than 150 countries.</p>'+
+					  '<div class="iw-subTitle">Cost of Attendance</div>' + 
+					  '<p>In-State Tuition: $8,430 <br>Out-of-State Tuition: $21,850 <br>Room and Board: $12,032 <br>Other Expenses : $1200 <br>Total In-state: $21,662</p>'+
+					  '<img src="mapIcons/scholarship.jpg" alt="Stony Brook University." height="80" width=100%>' +
+						'<p>New York’s Tuition-Free Degree Program: The Excelsior Scholarship </p>'+
+                      '<div class="iw-subTitle">Cost of Attendance After Excelsior Scholarship:</div>' + 
+					  '<p>Total In-state: $21,662<br>NY Excelsior Scholarship:  - $8,430  </p>'+
+					  '<b>Total In-state: $1200 <br>Total per year(excluding housing)  </b>'+
+
+					   '<p>Gradute without any debt with help of NY exelsior scholarship. <br> Learn more at:<br> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</p>'+
+					   
+					   '<b> Get your questions answered about STONY BROOK UNVERSITY from the current students. </b>'+
+					   '<form action="index.html" method="get" target="_blank"><br><button type="submit" text-align:center>JOIN CONVERSATION<br></button></form>'+
+                    '<div class="iw-bottom-gradient"></div>' +
+                  '</div>';
+
+  // A new Info Window is created and set content
+  var infowindow = new google.maps.InfoWindow({
+    content: content,
+
+    // Assign a maximum value for the width of the infowindow allows
+    // greater control over the various content elements
+    maxWidth: 350
+  });
+  
+
+   var marker1 = new google.maps.Marker({
+    position: { lat: 40.8470, lng: -73.0539 },
+    map: map,
+	icon: suffolk
+  });
+  
+  
+  var marker2 = new google.maps.Marker({
+    position: { lat: 40.7525, lng: -73.4287 },
+    map: map,
+	icon: farmingdale
+  });
+  
+  marker1.setMap(map);
+  marker2.setMap(map);
+  
+  
+  
+  // marker options
+  var marker = new google.maps.Marker({
+    position: factory,
+    map: map,
+	icon: image
+  });
+  
+  
+ 
+ 
+
+  
+  // This event expects a click on a marker
+  // When this event is fired the Info Window is opened.
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+
+  // Event that closes the Info Window with a click on the map
+  google.maps.event.addListener(map, 'click', function() {
+    infowindow.close();
+  });
+
+  // *
+  // START INFOWINDOW CUSTOMIZE.
+  // The google.maps.event.addListener() event expects
+  // the creation of the infowindow HTML structure 'domready'
+  // and before the opening of the infowindow, defined styles are applied.
+  // *
+  google.maps.event.addListener(infowindow, 'domready', function() {
+
+    // Reference to the DIV that wraps the bottom of infowindow
+    var iwOuter = $('.gm-style-iw');
+
+    /* Since this div is in a position prior to .gm-div style-iw.
+     * We use jQuery and create a iwBackground variable,
+     * and took advantage of the existing reference .gm-style-iw for the previous div with .prev().
+    */
+    var iwBackground = iwOuter.prev();
+
+    // Removes background shadow DIV
+    iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+
+    // Removes white background DIV
+    iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+
+    // Moves the infowindow 115px to the right.
+    iwOuter.parent().parent().css({left: '115px'});
+
+    // Moves the shadow of the arrow 76px to the left margin.
+    iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+
+    // Moves the arrow 76px to the left margin.
+    iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+
+    // Changes the desired tail shadow color.
+    iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index' : '1'});
+
+    // Reference to the div that groups the close button elements.
+    var iwCloseBtn = iwOuter.next();
+
+    // Apply the desired effect to the close button
+    iwCloseBtn.css({opacity: '1', right: '38px', top: '3px', border: '7px solid #48b5e9', 'border-radius': '13px', 'box-shadow': '0 0 5px #3990B9'});
+
+    // If the content of infowindow not exceed the set maximum height, then the gradient is removed.
+    if($('.iw-content').height() < 140){
+      $('.iw-bottom-gradient').css({display: 'none'});
+    }
+
+    // The API automatically applies 0.7 opacity to the button after the mouseout event. This function reverses this event to the desired value.
+    iwCloseBtn.mouseout(function(){
+      $(this).css({opacity: '1'});
+    });
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	
+	
+		
+		
+  </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
@@ -23,76 +212,12 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-	  <!-google maps starts here - !>
-      <div class="row center">
-        
-	<h3>My Google Maps Demo</h3>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-    </script>
-	
-	
-      </div>
-     
-
-    </div>
-  </div>
-
-
-  
-    <br><br>
-
-    <div class="section">
-
-    </div>
-  </div>
+  <h6 >Top colleges according to your search criteria.</h6>
+		<div id="map-canvas">   
+	</div>
 
   <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    
     <div class="footer-copyright">
       <div class="container">
       Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
