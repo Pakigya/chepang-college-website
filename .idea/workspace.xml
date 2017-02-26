@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db0d49ca-d358-4fcc-b9b5-1290c5b5517e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Signup.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StudentLogin/newstudent.html" afterPath="$PROJECT_DIR$/StudentLogin/newstudent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/Signup.css" afterPath="$PROJECT_DIR$/css/Signup.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1509">
-              <caret line="122" column="12" lean-forward="false" selection-start-line="122" selection-start-column="12" selection-end-line="126" selection-end-column="0" />
+            <state relative-caret-position="234">
+              <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -34,14 +37,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newstudent.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newstudent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StudentLogin/newstudent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="153" column="42" lean-forward="true" selection-start-line="153" selection-start-column="42" selection-end-line="153" selection-end-column="42" />
+            <state relative-caret-position="441">
+              <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#nav#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Signup.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/Signup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Signup.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/Signup.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="711">
+              <caret line="2608" column="1" lean-forward="false" selection-start-line="2608" selection-start-column="1" selection-end-line="2608" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,8 +112,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/StudentLogin/signup.html" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/Signup.js" />
         <option value="$PROJECT_DIR$/StudentLogin/newstudent.html" />
+        <option value="$PROJECT_DIR$/css/Signup.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -159,6 +184,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chepang-college-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chepang-college-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chepang-college-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chepang-college-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -576,7 +629,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488077841769</updated>
-      <workItem from="1488077843224" duration="3392000" />
+      <workItem from="1488077843224" duration="6003000" />
     </task>
     <task id="LOCAL-00001" summary="@Biki&#10;&#10;- Change in the Signup Page and introduction of newstudentpage&#10;- Included Logo">
       <created>1488083792401</created>
@@ -585,15 +638,22 @@
       <option name="project" value="LOCAL" />
       <updated>1488083792402</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&#10;- Included Logo">
+      <created>1488084084254</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1488084084254</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3392000" />
+    <option name="totallyTimeSpent" value="6003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -610,7 +670,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1423611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1423611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -634,7 +694,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="@Biki&#10;&#10;- Change in the Signup Page and introduction of newstudentpage&#10;- Included Logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="@Biki&#10;&#10;- Change in the Signup Page and introduction of newstudentpage&#10;- Included Logo" />
+    <MESSAGE value="&#10;- Included Logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;- Included Logo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -675,22 +736,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/Signup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1509">
-          <caret line="122" column="12" lean-forward="false" selection-start-line="122" selection-start-column="12" selection-end-line="126" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="555">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/StudentLogin/newstudent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="153" column="42" lean-forward="true" selection-start-line="153" selection-start-column="42" selection-end-line="153" selection-end-column="42" />
+        <state relative-caret-position="441">
+          <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#nav#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/Signup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="2608" column="1" lean-forward="false" selection-start-line="2608" selection-start-column="1" selection-end-line="2608" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

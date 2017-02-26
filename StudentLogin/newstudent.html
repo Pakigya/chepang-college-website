@@ -17,7 +17,6 @@
     <!-- Custom styles for this template -->
     <link href="../css/blog.css" rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -44,7 +43,7 @@
 
 
     <div class="blog-header">
-        <h1 class="blog-title">Lets Start this Journey</h1>
+        <h1 class="blog-title">Lets start this Journey</h1>
         <p class="lead blog-description">  A guidance to your Future. </p>
     </div>
 
@@ -54,30 +53,6 @@
         <form class="form-horizontal">
             <fieldset>
 
-                <!-- Form Name -->
-                <legend>FINDING SCHOOLS APPROPRIATE FOR YOU</legend>
-
-                <!-- Text input-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="pname">ZIP CODE</label>
-                    <div class="col-md-4">
-                        <input id="pname" name="pname" type="text" placeholder="" class="form-control input-md" required="">
-
-                    </div>
-                </div>
-
-                <!-- Select Basic -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="PTYPE">MAJOR</label>
-                    <div class="col-md-4">
-                        <select id="PTYPE" name="PTYPE" class="form-control">
-                            <option value="1">ACCOUNTING</option>
-                            <option value="2">AMERICAN STUDIES</option>
-                            <option value="3">ANTHROPOLOGY</option>
-                            <option value="4">COMPUTER SCIENCE</option>
-                        </select>
-                    </div>
-                </div>
                 <!----- START OF SCALE-->
                 <div class="container">
                     <div class="row">
@@ -120,6 +95,7 @@
                                     </ul>
                                 </div>
 
+                                <!-- SAVE AND CONTINUE UPDATE NECESSARY
                                 <form role="form">
                                     <div class="tab-content">
                                         <div class="tab-pane active" role="tabpanel" id="step1">
@@ -153,12 +129,56 @@
                                         <div class="clearfix"></div>
                                     </div>
                                 </form>
+                                -->
                             </div>
                         </section>
                     </div>
                 </div>
 
                 <!----- END OF SCALE ->
+
+
+
+                <!-- Form Name -->
+                <legend>FINDING SCHOOLS APPROPRIATE FOR YOU</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="pname">ZIP CODE</label>
+                    <div class="col-md-4">
+                        <input id="pname" name="pname" type="text" placeholder="" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="PTYPE">MAJOR</label>
+                    <div class="col-md-4">
+                        <select id="PTYPE" name="PTYPE" class="form-control">
+                            <option value="1">ACCOUNTING</option>
+                            <option value="2">AMERICAN STUDIES</option>
+                            <option value="3">ANTHROPOLOGY</option>
+                            <option value="4">COMPUTER SCIENCE</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="PTYPE">INCOME</label>
+                    <div class="col-md-4">
+                        <select id="PTYPE" name="PTYPE" class="form-control">
+                            <option value="1">LESS THAN $50000</option>
+                            <option value="2">$50000 - $100000</option>
+                            <option value="3">MORE THAN $ 100000</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
                 <!-- Button (Double) -->
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="button1idFFF"></label>
@@ -167,6 +187,7 @@
                         <button id="button2id" name="button2id" class="btn btn-danger">CANCEL</button>
                     </div>
                 </div>
+
 
             </fieldset>
         </form>
@@ -177,13 +198,11 @@
 
 
 
-
-
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../js/Signup.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
         <script src="../../dist/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
