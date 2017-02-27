@@ -2557,6 +2557,9 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+
+
+
 .valign-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4305,11 +4308,17 @@ h2 {
   line-height: 110%;
   margin: 1.78rem 0 1.424rem 0;
 }
+h2 a{
+    float:right;
+}
 
 h3 {
   font-size: 2.92rem;
   line-height: 110%;
   margin: 1.46rem 0 1.168rem 0;
+}
+h1 a{
+    float:right;
 }
 
 h4 {
@@ -4317,18 +4326,27 @@ h4 {
   line-height: 110%;
   margin: 1.14rem 0 0.912rem 0;
 }
+h4 a{
+    float:right;
+}
 
 h5 {
   font-size: 1.64rem;
   line-height: 110%;
   margin: 0.82rem 0 0.656rem 0;
 }
-
+h5 a{
+    float:right;
+}
 h6 {
   font-size: 1rem;
   line-height: 110%;
   margin: 0.5rem 0 0.4rem 0;
 }
+h6 a{
+    float:right;
+}
+
 
 em {
   font-style: italic;
@@ -7761,7 +7779,7 @@ input[type=range]:focus::-ms-fill-upper {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 470px;
   -webkit-perspective: 500px;
           perspective: 500px;
   -webkit-transform-style: preserve-3d;
@@ -7809,15 +7827,18 @@ input[type=range]:focus::-ms-fill-upper {
 
 .carousel .carousel-item {
   display: none;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   position: absolute;
+  border: 10px;
+  border-color: #000000;
   top: 0;
   left: 0;
 }
 
 .carousel .carousel-item img {
   width: 100%;
+   
 }
 
 .carousel .indicators {
@@ -8593,7 +8614,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 #map-canvas {
     margin: 0;
     padding: 0;
-    height: 590px;
+    height: 572px;
     max-width: none;
 }
 #map-canvas img {
@@ -8651,3 +8672,52 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
     background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 }
+
+
+#aaiw-container {
+    margin-bottom: 20px;
+}
+#aaiw-container .aaiw-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px;
+    background-color: #48b5e9;
+    color: white;
+    margin: 0;
+    border-radius: 2px 2px 0 0;
+}
+#aaiw-container .aaiw-content {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-right: 1px;
+    padding: 15px 5px 20px 15px;
+    max-height: 220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+	 background-color: #FFFFCC;
+	 text-color:  #000000;
+
+}
+.aaiw-content img {
+    float: right;
+    margin: 0 5px 5px 10px; 
+}
+.aaiw-subTitle {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+.aaiw-bottom-gradient {
+    position: absolute;
+    width: 326px;
+    height: 25px;
+    bottom: 10px;
+    right: 18px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+

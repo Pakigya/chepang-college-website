@@ -26,10 +26,12 @@
 */
 
 // map center
-var center = new google.maps.LatLng(40.9124, -73.1234);
+var center = new google.maps.LatLng(40.8649, -73.1301);
 
 // marker position
-var factory = new google.maps.LatLng(40.9124, -73.1234);
+var stonyBrookPosition = new google.maps.LatLng(40.9124, -73.1234);
+var suffolkPosition = new google.maps.LatLng(40.8470, -73.0539);
+var farmingdalePosition = new google.maps.LatLng(40.7525,-73.4287 );
 
 
   
@@ -58,10 +60,34 @@ var factory = new google.maps.LatLng(40.9124, -73.1234);
   scaledSize: new google.maps.Size(65, 55)
 };
 
+ var saint = {
+  url: "mapIcons/saintList.jpg",
+  size: new google.maps.Size(71, 71),
+  origin: new google.maps.Point(0, 0),
+  anchor: new google.maps.Point(17, 34),
+  scaledSize: new google.maps.Size(65, 55)
+};
+
+
+ var empire = {
+  url: "mapIcons/empireList.jpg",
+  size: new google.maps.Size(71, 71),
+  origin: new google.maps.Point(0, 0),
+  anchor: new google.maps.Point(17, 34),
+  scaledSize: new google.maps.Size(65, 55)
+};
+
+
+
+
+
+
+
+
 function initialize() {
   var mapOptions = {
     center: center,
-    zoom: 13,
+    zoom: 11,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
 
@@ -85,59 +111,162 @@ function initialize() {
 					   '<p>Gradute without any debt with help of NY exelsior scholarship. <br> Learn more at:<br> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</p>'+
 					   
 					   '<b> Get your questions answered about STONY BROOK UNVERSITY from the current students. </b>'+
-					   '<form action="index.html" method="get" target="_blank"><br><button type="submit" text-align:center>JOIN CONVERSATION<br></button></form>'+
+					   '<form action="index.html" method="get" target="_blank"><br><button type="submit" text-align:center><h5>Speak with our Students<br></h5></button></form>'+
                     '<div class="iw-bottom-gradient"></div>' +
                   '</div>';
 
-  // A new Info Window is created and set content
-  var infowindow = new google.maps.InfoWindow({
-    content: content,
+				  
+			  // InfoWindow content
+  var content1 = '<div id="iw-container">' +
+                    '<div class="iw-title">Stony Brook University</div>' +
+                    '<div class="iw-content">' +
+                      '<div class="iw-subTitle">Welcome Future Seawolves</div>' +
+                      '<img src="mapIcons/logo.png" alt="Stony Brook University." height="115" width="83">' +
+                      '<p> Stony Brook is home to an exceptionally diverse student body of more than 25,700 high-achieving students נincluding more than 17,000 undergraduates נfrom nearly all 50 states and more than 150 countries.</p>'+
+					  '<div class="iw-subTitle">Cost of Attendance</div>' + 
+					  '<p>In-State Tuition: $8,430 <br>Out-of-State Tuition: $21,850 <br>Room and Board: $12,032 <br>Other Expenses : $1200 <br>Total In-state: $21,662</p>'+
+					  '<img src="mapIcons/scholarship.jpg" alt="Stony Brook University." height="80" width=100%>' +
+						'<p>New Yorkӳ Tuition-Free Degree Program: The Excelsior Scholarship </p>'+
+                      '<div class="iw-subTitle">Cost of Attendance After Excelsior Scholarship:</div>' + 
+					  '<p>Total In-state: $21,662<br>NY Excelsior Scholarship:  - $8,430  </p>'+
+					  '<b>Total In-state: $1200 <br>Total per year(excluding housing)  </b>'+
 
+					   '<p>Gradute without any debt with help of NY exelsior scholarship. <br> Learn more at:<br> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</p>'+
+					   
+					   '<b> Get your questions answered about STONY BROOK UNVERSITY from the current students. </b>'+
+					   '<form action="index.html" method="get" target="_blank"><br><button type="submit" text-align:center><h5>Speak with our Students<br></h5></button></form>'+
+                    '<div class="iw-bottom-gradient"></div>' +
+                  '</div>';	  
+				  
+				  
+				  
+				    // InfoWindow content
+  var content2 = '<div id="iw-container">' +
+                    '<div class="iw-title">Stony Brook University</div>' +
+                    '<div class="iw-content">' +
+                      '<div class="iw-subTitle">Welcome Future Seawolves</div>' +
+                      '<img src="mapIcons/logo.png" alt="Stony Brook University." height="115" width="83">' +
+                      '<p> Stony Brook is home to an exceptionally diverse student body of more than 25,700 high-achieving students נincluding more than 17,000 undergraduates נfrom nearly all 50 states and more than 150 countries.</p>'+
+					  '<div class="iw-subTitle">Cost of Attendance</div>' + 
+					  '<p>In-State Tuition: $8,430 <br>Out-of-State Tuition: $21,850 <br>Room and Board: $12,032 <br>Other Expenses : $1200 <br>Total In-state: $21,662</p>'+
+					  '<img src="mapIcons/scholarship.jpg" alt="Stony Brook University." height="80" width=100%>' +
+						'<p>New Yorkӳ Tuition-Free Degree Program: The Excelsior Scholarship </p>'+
+                      '<div class="iw-subTitle">Cost of Attendance After Excelsior Scholarship:</div>' + 
+					  '<p>Total In-state: $21,662<br>NY Excelsior Scholarship:  - $8,430  </p>'+
+					  '<b>Total In-state: $1200 <br>Total per year(excluding housing)  </b>'+
+
+					   '<p>Gradute without any debt with help of NY exelsior scholarship. <br> Learn more at:<br> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</p>'+
+					   
+					   '<b> Get your questions answered about STONY BROOK UNVERSITY from the current students. </b>'+
+					   '<form action="index.html" method="get" target="_blank"><br><button type="submit" text-align:center><h5>Speak with our Students<br></h5></button></form>'+
+                    '<div class="iw-bottom-gradient"></div>' +
+                  '</div>';
+				  
+  // A new Info Window is created and set content
+  var infowindow0 = new google.maps.InfoWindow({
+    content: content,
     // Assign a maximum value for the width of the infowindow allows
     // greater control over the various content elements
     maxWidth: 350
   });
   
+  
+  
+  
+  // A new Info Window is created and set content
+  var infowindow1 = new google.maps.InfoWindow({
+    content: content1,
+    // Assign a maximum value for the width of the infowindow allows
+    // greater control over the various content elements
+    maxWidth: 350
+  });
+  
+  
+  
+   // A new Info Window is created and set content
+  var infowindow2 = new google.maps.InfoWindow({
+    content: content2,
+    // Assign a maximum value for the width of the infowindow allows
+    // greater control over the various content elements
+    maxWidth: 350
+  });
+
 
    var marker1 = new google.maps.Marker({
-    position: { lat: 40.8470, lng: -73.0539 },
+    position: suffolkPosition,
     map: map,
 	icon: suffolk
   });
   
   
   var marker2 = new google.maps.Marker({
-    position: { lat: 40.7525, lng: -73.4287 },
+    position: farmingdalePosition,
     map: map,
 	icon: farmingdale
   });
   
+    
+  var marker3 = new google.maps.Marker({
+    position: { lat:43.0779, lng: -73.8055 },
+    map: map,
+	icon: empire
+  });
+  
+    
+  var marker4 = new google.maps.Marker({
+    position: { lat: 40.7216, lng: -73.7947 },
+    map: map,
+	icon: saint
+  });
+  
+  
   marker1.setMap(map);
   marker2.setMap(map);
+  marker3.setMap(map);
+  marker4.setMap(map);
+
   
   
+ 
   
   // marker options
   var marker = new google.maps.Marker({
-    position: factory,
+    position: stonyBrookPosition,
     map: map,
 	icon: image
   });
   
   
- 
- 
+
 
   
   // This event expects a click on a marker
   // When this event is fired the Info Window is opened.
   google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(map,marker);
+    infowindow0.open(map,marker);
   });
 
+  
+   // This event expects a click on a marker
+  // When this event is fired the Info Window is opened.
+  google.maps.event.addListener(marker1, 'click', function() {
+    infowindow1.open(map,marker1);
+  });
+  
+  
+   // This event expects a click on a marker
+  // When this event is fired the Info Window is opened.
+  google.maps.event.addListener(marker2, 'click', function() {
+    infowindow2.open(map,marker2);
+  });
+  
+  
   // Event that closes the Info Window with a click on the map
   google.maps.event.addListener(map, 'click', function() {
-    infowindow.close();
+    infowindow0.close();
+	infowindow1.close();
+    infowindow2.close();
+
   });
 
   // *
@@ -146,7 +275,8 @@ function initialize() {
   // the creation of the infowindow HTML structure 'domready'
   // and before the opening of the infowindow, defined styles are applied.
   // *
-  google.maps.event.addListener(infowindow, 'domready', function() {
+    
+  google.maps.event.addListener(infowindow0, 'domready', function() {
 
     // Reference to the DIV that wraps the bottom of infowindow
     var iwOuter = $('.gm-style-iw');
@@ -212,10 +342,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <h6 >Top colleges according to your search criteria.</h6>
-		<div id="map-canvas">   
+  <div>
+   <h6 class= "left-align" >Top colleges according to your search criteria.  <a class="waves-effect waves-light btn" href="mapPageList.html"> Go to Slider View</a> </h6> 
+  </div>
+ <h6>      .                                                                     </h6>
+ 
+  <div id="map-canvas">   
 	</div>
-
   <footer class="page-footer orange">
     
     <div class="footer-copyright">
