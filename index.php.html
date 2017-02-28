@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Excel to College </title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-green lighten-1" role="navigation">
+
+    <div class="nav-wrapper container">
+      <img src="resource/logo.png" alt="Excel to College Logo" style="width:70px;height:60px; padding-right: 10px;">
+
+      <a id="logo-container" href="index.html" class="brand-logo">Excel To College</a>
+
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="_blank">Free Tution NYC Excelsior scholarship</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship">Free Tution NYC</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Excel to College</h1>
+      <div class="row center">
+        <h5 class="header col s12 light"> Learn more about colleges directly from the students and staff.</h5>
+        <h6 class="header col s12 light">I am looking to </h6>
+      </div>
+      <div class="row center">
+        <a href="StudentLogin/newstudent.html" id="download-button" class="btn-large waves-effect waves-light orange">Join college</a>
+      </div>
+	  <div class="row center">
+        <a href="StudentLogin/signup.html" id="download-button" class="btn-large waves-effect waves-light orange">Share about my college</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Learn about Colleges</h5>
+
+            <p class="light">There is no better way than talking to students themselves to get a feel for campus life. Through our chat rooms, you will have an unique opportunity to ask any questions you may have regarding the college you may be interested in.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Join College Debt Free</h5>
+
+            <p class="light">Paying for colleges has never been more expensive. People are afraid of going to colleges because they are scared of being in debt. Through our app, you will get an opportunity to calculate the final cost of attendance after applying the Excelsior scholarship and turn your dream of going to college debt-free into a reality.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">Searching for college can be very confusing and complicated but it doesn't have to be. Our app is very easy to use and it will guide you (hassle-free)  in making one of the most important decisions of your life.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+
+
+
+  <!-- Reference: http://avexdesigns.com/responsive-youtube-embed/ -->
+
+  <div class="container">
+    <div class="row">
+      <h3>SUCESS STORIES OF STUDENT</h3>
+
+
+      <hr>
+    </div><!--.row -->
+  </div><!--./container -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+      
+        <iframe width="560" height="315" src="//www.youtube.com/embed/kQbCVp2oJY8?list=PLM0Ajq8FKzykKzQqcPxdC339Mp0ketxqM&amp;ecver=2"" class="img-responsive center-block" allowfullscreen=""></iframe>
+    </div><!--./row -->
+
+  </div><!--./container -->
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About us</h5>
+          <p class="grey-text text-lighten-4">We are team CHEPANG from Stony Brook University. Dedicated towards changing the future of education  with innovative technologies. </p>
+
+
+        </div>
+        <div class="col l3 s12">
+         
+        </div>
+		
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" >chepang.edu@gmail.com</a></li>
+            <li><a class="white-text" >Stony Brook University</a></li>
+            <li><a class="white-text">Stony Brook, NY</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
