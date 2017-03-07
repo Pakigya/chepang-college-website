@@ -14,23 +14,6 @@
 
 
 
-<script>
-      function saveData() {
-
-  var zipcode = document.getElementById("first_name");
-
-
-  localStorage.setItem("key", zipcode.value);
-
-alert(zipcode.value);
-
-
-
-
-}
-    </script>>
-
-
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
@@ -57,8 +40,7 @@ alert(zipcode.value);
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6" >
-          <input placeholder="Zip Code
-		  " id="first_name" type="text" class="validate">
+          <input placeholder="Zip Code" id="first_name" type="text" class="validate">
           <label for="first_name">First Name</label>
         </div>
       </div>
@@ -114,7 +96,7 @@ alert(zipcode.value);
 	 
 	 
 	  <div class="row center">
-        <a href="mapPage.html"  onclick="saveData()" id="download-button" class="btn-large waves-effect waves-light orange">College Students</a>
+        <a href="mapPage.html"  onclick="saveZipcode()" id="download-button" class="btn-large waves-effect waves-light orange">College Students</a>
       </div>
       <br><br>
 
@@ -170,6 +152,7 @@ alert(zipcode.value);
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/searchAlgorithmForCriteriaPage.js"></script>>
 
   </body>
 </html>

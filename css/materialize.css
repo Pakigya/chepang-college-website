@@ -4347,6 +4347,10 @@ h6 a{
     float:right;
 }
 
+h6 ul{
+  float: center;
+}
+
 
 em {
   font-style: italic;

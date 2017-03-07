@@ -4,11 +4,12 @@
  * http://en.marnoto.com/2014/09/5-formas-de-personalizar-infowindow.html
 */
 
-var display_date = localStorage.getItem("key");
-alert(display_date);  
+var lat =  parseFloat(localStorage.getItem("lat"));
+var lng =  parseFloat(localStorage.getItem("lng"));
+
 
 // map center
-var center = new google.maps.LatLng(40.8649, -73.1301);
+var center = new google.maps.LatLng(lng, lat);
 
 // marker position
 
@@ -117,7 +118,7 @@ for (i = 0; i < markers.length; i++) {
 function initialize() {
   var mapOptions = {
     center: center,
-    zoom: 11,
+    zoom: 12,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
 
@@ -126,7 +127,9 @@ function initialize() {
 
 var infoWindowSummary=[];
 
- for( i = 0; i < markers.length; i++ ) {
+
+
+ for( i = 0; i < 61; i++ ) {
 
   infoWindowSummary[i] = '<div id="iw-container">' +
                     '<div class="iw-title">'+markers[i][1]+"     " +'<img src="mapIcons/tick.png" alt="" padding ="15" height="22" width="22">' +'</div>' +
@@ -144,13 +147,35 @@ var infoWindowSummary=[];
              '<p>Gradute without any debt with help of NY exelsior scholarship. <br> Learn more at:<br><a href= "https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="target="_blank""> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</a></p>'+
              
              '<b> Get your questions answered from our current students. </b>'+
-             '<form action="https://collegediscussion.chatovod.com" method="get" target="_blank"><br><a href = "https://collegediscussion.chatovod.com"><button type="submit" text-align:center><h5>Speak with our Students<br></h5></button></a></form>'+
+             '<form action="chatRoomSuny.html" method="get" ><br><a href = "https://collegediscussion.chatovod.com"><button type="submit" text-align:center><h5>Speak with our Students<br></h5></button></a></form>'+
                     '<div class="iw-bottom-gradient"></div>' +
                   '</div>'
-          
-
+            
  }
 
+ for( i = 61; i < markers.length; i++ ) {
+
+  infoWindowSummary[i] = '<div id="iw-container">' +
+                    '<div class="iw-title">'+markers[i][1]+"     " +'<img src="mapIcons/tick.png" alt="" padding ="15" height="22" width="22">' +'</div>' +
+                    '<div class="iw-content">' +
+                      '<img src="mapIcons/collegeIcons/'+markers[i][4]+'" alt="'+markers[i][1]+'" height="115" width="83">' +
+                      '<p> '+markers[i][1]+' is home to an exceptionally diverse student body of more than 25,700 high-achieving students including more than 17,000 undergraduates from nearly all 50 states and more than 150 countries.</p>'+
+            '<div class="iw-subTitle">Cost of Attendance</div>' + 
+            '<p>In-State Tuition: $8,430 <br>Out-of-State Tuition: $21,850 <br>Room and Board: $12,032 <br>Other Expenses : $1200 <br>Total In-state: $21,662</p>'+
+            '<img src="mapIcons/scholarship.jpg" alt="Stony Brook University." height="80" width=100%>' +
+            '<p>New York Tuition-Free Degree Program: The Excelsior Scholarship </p>'+
+                      '<div class="iw-subTitle">Cost of Attendance After Excelsior Scholarship:</div>' + 
+            '<p>Total In-state: $21,662<br>NY Excelsior Scholarship:  - $8,430  </p>'+
+            '<b>Total In-state: $1200 <br>Total per year(excluding housing)  </b>'+
+
+             '<p>Gradute without any debt with help of NY exelsior scholarship. <br> Learn more at:<br><a href= "https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="target="_blank""> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</a></p>'+
+             
+             '<b> Get your questions answered from our current students. </b>'+
+             '<form action="chatRoomCuny.html" method="get" ><br><a href = "https://collegediscussion.chatovod.com"><button type="submit" text-align:center><h5>Speak with our Students<br></h5></button></a></form>'+
+                    '<div class="iw-bottom-gradient"></div>' +
+                  '</div>'
+            
+ }
 
 var markerWithIcons = [];
 var infowindowsForMarkers = [];
