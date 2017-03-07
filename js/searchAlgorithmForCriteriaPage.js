@@ -1808,7 +1808,7 @@ var allZipcodes = [
 
 function saveZipcode(){
 
- var zipcode = +document.getElementById("first_name").value;
+ var zipcode = +document.getElementById("pname").value;
 
  var location = binarySearch(allZipcodes, zipcode);
 

@@ -4,6 +4,8 @@
  * http://en.marnoto.com/2014/09/5-formas-de-personalizar-infowindow.html
 */
 
+
+
 var lat =  parseFloat(localStorage.getItem("lat"));
 var lng =  parseFloat(localStorage.getItem("lng"));
 

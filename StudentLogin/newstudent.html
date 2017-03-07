@@ -4,24 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
     <title>Excel to College</title>
 
-    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="../css/Signup.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <!-- Custom styles for this template -->
-    <link href="../css/blog.css" rel="stylesheet">
-
-   
+    <link href="../css/blog.css" rel="stylesheet">   
 </head>
-
 <body>
-
 <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
         <nav class="blog-nav">
@@ -35,11 +24,6 @@
 
 
 <div class="container">
-
-
-    <!- this is where the form is listed ->
-
-
     <div class="blog-header">
         <h1 class="blog-title">Lets start this Journey</h1>
         <p class="lead blog-description">  A guidance to your Future. </p>
@@ -47,102 +31,19 @@
 
     <div class="row">
 
-
         <form class="form-horizontal">
             <fieldset>
-
-                <!----- START OF SCALE-->
                 <div class="container">
                     <div class="row">
                         <section>
                             <div class="wizard">
-                            <!-- 
-                                <div class="wizard-inner">
-                                    <div class="connecting-line"></div>
-                                    <ul class="nav nav-tabs" role="tablist">
-
-                                        <li role="presentation" class="active">
-                                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
-                                           <span class="round-tab">
-                                               <i class="glyphicon glyphicon-folder-open"></i>
-                                           </span>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation" class="disabled">
-                                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
-                                           <span class="round-tab">
-                                               <i class="glyphicon glyphicon-pencil"></i>
-                                           </span>
-                                            </a>
-                                        </li>
-                                        <li role="presentation" class="disabled">
-                                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
-                                           <span class="round-tab">
-                                               <i class="glyphicon glyphicon-picture"></i>
-                                           </span>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation" class="disabled">
-                                            <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
-                                           <span class="round-tab">
-                                               <i class="glyphicon glyphicon-ok"></i>
-                                           </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div> */ -->
-
-                                <!-- SAVE AND CONTINUE UPDATE NECESSARY
-                                <form role="form">
-                                    <div class="tab-content">
-                                        <div class="tab-pane active" role="tabpanel" id="step1">
-                                            <h3>Step 1</h3>
-                                            <p>This is step 1</p>
-                                            <ul class="list-inline pull-right">
-                                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
-                                            </ul>
-                                        </div>
-                                        <div class="tab-pane" role="tabpanel" id="step2">
-                                            <h3>Step 2</h3>
-                                            <p>This is step 2</p>
-                                            <ul class="list-inline pull-right">
-                                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
-                                            </ul>
-                                        </div>
-                                        <div class="tab-pane" role="tabpanel" id="step3">
-                                            <h3>Step 3</h3>
-                                            <p>This is step 3</p>
-                                            <ul class="list-inline pull-right">
-                                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                                <li><button type="button" class="btn btn-default next-step">Skip</button></li>
-                                                <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
-                                            </ul>
-                                        </div>
-                                        <div class="tab-pane" role="tabpanel" id="complete">
-                                            <h3>Complete</h3>
-                                            <p>You have successfully completed all steps.</p>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </form>
-                                -->
+                           
                             </div>
                         </section>
                     </div>
 
-                <!-- Form Name -->
                 <legend>FINDING SCHOOLS APPROPRIATE FOR YOU</legend>
                 </div>
-
-                <!----- END OF SCALE ->
-
-
-
-
-                <!-- Text input-->
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="pname">ZIP CODE</label>
                     <div class="col-md-4">
@@ -187,7 +88,7 @@
                     <label class="col-md-4 control-label" for="button1idFFF"></label>
                     <div class="col-md-8 row">
                         <div class="ol-md-8">
-                            <a href="../mapPage.html" id="button1idFFF" name="button1idFFF" class="btn btn-success">SEARCH COLLEGES</a>
+                            <a href="../mapPage.html" onclick="saveZipcode()" id="button1idFFF" name="button1idFFF" class="btn btn-success">SEARCH COLLEGES</a>
                         </div>
                     </div>
                 </div>
@@ -195,16 +96,8 @@
         </form>
 
 
-
-
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <!--<script src="../js/Signup.js"></script> -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="../../dist/js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="../js/searchAlgorithmForCriteriaPage.js"></script>>
 </body>
 </html>
 
