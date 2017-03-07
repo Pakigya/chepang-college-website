@@ -1,36 +1,83 @@
-$(document).ready(function () {
-    //Initialize tooltips
-    $('.nav-tabs > li a[title]').tooltip();
+function initApp() {
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            window.location = 'https://collegediscussion.chatovod.com/';
+            window.location.href = '../mapPage.html';
 
-    //Wizard
-    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-
-        var $target = $(e.target);
-
-        if ($target.parent().hasClass('disabled')) {
-            return false;
+        } else {
+            // User is signed out.
         }
-    });
-
-    $(".next-step").click(function (e) {
-
-        var $active = $('.wizard .nav-tabs li.active');
-        $active.next().removeClass('disabled');
-        nextTab($active);
 
     });
-    $(".prev-step").click(function (e) {
-
-        var $active = $('.wizard .nav-tabs li.active');
-        prevTab($active);
-
-    });
-});
-
-function nextTab(elem) {
-    $(elem).next().find('a[data-toggle="tab"]').click();
+    document.getElementById('btn-login').addEventListener('click', toggleSignIn, false);
+    document.getElementById('btn-signup').addEventListener('click', handleSignUp, false);
 }
-function prevTab(elem) {
-    $(elem).prev().find('a[data-toggle="tab"]').click();
+window.onload = function() {
+    initApp();
+};
+
+
+/**
+ * Handles the sign up button press.
+ */
+function handleSignUp() {
+    var email = document.getElementById('signup-email').value;
+    var password = document.getElementById('signup-password').value;
+    var signupbox = document.getElementById('signupbox');
+    var loginbox = document.getElementById('loginbox');
+
+
+    if (email.length < 4) {
+        alert('Please enter an email address.');
+        return;
+    }
+    if (password.length < 4) {
+        alert('Please enter a password.');
+        return;
+    }
+    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        if (errorCode == 'auth/weak-password') {
+            alert('The password is too weak.');
+        } else {
+            alert(errorMessage);
+            return;
+        }
+        console.log(error);
+    });
+    alert('Account Created! Thank you!!!');
+    signupbox.style.display='none';
+    loginbox.style.display='block';
 }
 
+/**
+ * Handles the sign in button press.
+ */
+function toggleSignIn() {
+    if (firebase.auth().currentUser) {
+        firebase.auth().signOut();
+    } else {
+        var email = document.getElementById('login-username').value;
+        var password = document.getElementById('login-password').value;
+        if (email.length < 4) {
+            alert('Please enter an email address.');
+            return;
+        }
+        if (password.length < 4) {
+            alert('Please enter a password.');
+            return;
+        }
+        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            if (errorCode === 'auth/wrong-password') {
+                alert('Wrong password.');
+            } else {
+                alert(errorMessage);
+            }
+            console.log(error);
+        });
+    }
+}
