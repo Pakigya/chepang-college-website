@@ -17,13 +17,26 @@
     <!-- Custom styles for this template -->
     <link href="../css/blog.css" rel="stylesheet">
 
+    <script>
+    	var zipcode = document.getElementById("pname");
+
+
+  localStorage.setItem("key", zipcode.value);
+
+alert(zipcode.value);
+
+
+
+
+}
+    </script>>
+
 </head>
 
 <body>
 
 <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
-
         <nav class="blog-nav">
             <img src="../resource/logo.png" alt="Excel to College Logo" style="width:90px;height:80px;" >
             <a class="blog-nav-item active" href="../index.html">Home</a>
@@ -146,7 +159,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="pname">ZIP CODE</label>
                     <div class="col-md-4">
-                        <input id="pname" name="pname" type="text" placeholder="" class="form-control input-md" required="">
+                        <input id="pname" name="pname" type="text" placeholder="" class="form-control input-md" required="" >
 
                     </div>
                 </div>
@@ -185,16 +198,12 @@
                 <!-- Button (Double) -->
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="button1idFFF"></label>
-
-                    <div class="col-md-8" >
+                    <div class="col-md-8 row">
                         <div class="ol-md-8">
-                            <a href="../mapPage.html" id="button1idFFF" name="button1idFFF" class="btn btn-success">SEARCH COLLEGES</a>
+                            <a href="../mapPage.html" onclick="saveData()" id="button1idFFF" name="button1idFFF" class="btn btn-success">SEARCH COLLEGES</a>
                         </div>
-                        <button id="button2id" name="button2id" class="btn btn-danger">CANCEL</button>
                     </div>
                 </div>
-
-
             </fieldset>
         </form>
 
@@ -204,7 +213,7 @@
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="../js/Signup.js"></script>
+        <!--<script src="../js/Signup.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="../../dist/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
