@@ -2,6 +2,8 @@ function initApp() {
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
             window.location = 'https://collegediscussion.chatovod.com/';
+            window.location.href = '../mapPage.html';
+
         } else {
             // User is signed out.
         }
