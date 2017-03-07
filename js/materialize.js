@@ -8039,7 +8039,7 @@ Picker.extend( 'pickadate', DatePicker )
   };
 
 
-    $.fn.carousel = function(methodOrOptions) {
+$.fn.carousel = function(methodOrOptions) {
       if ( methods[methodOrOptions] ) {
         return methods[ methodOrOptions ].apply( this, Array.prototype.slice.call( arguments, 1 ));
       } else if ( typeof methodOrOptions === 'object' || ! methodOrOptions ) {
@@ -8050,3 +8050,7 @@ Picker.extend( 'pickadate', DatePicker )
       }
     }; // Plugin end
 }( jQuery ));
+
+
+$('.carousel.carousel-slider').carousel({fullWidth: true});
+        
