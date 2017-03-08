@@ -8649,6 +8649,21 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin: 0;
     border-radius: 2px 2px 0 0;
 }
+
+#iw-container .iw-title a{
+     display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
 #iw-container .iw-content {
     font-size: 13px;
     line-height: 18px;
@@ -8683,4 +8698,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 #mapCanvas {
     width: 100%;
     height: 100%;
+}
+
+#listView {
+    width: 1050px;
+    height: 460px;
+    overflow: scroll;
+    overflow-x: hidden;
 }

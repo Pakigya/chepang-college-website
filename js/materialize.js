@@ -8053,4 +8053,6 @@ $.fn.carousel = function(methodOrOptions) {
 
 
 $('.carousel.carousel-slider').carousel({fullWidth: true});
-        
+
+
+
