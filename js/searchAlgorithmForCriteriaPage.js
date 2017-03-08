@@ -1806,11 +1806,20 @@ var allZipcodes = [
 ]
 
 
-function saveZipcode(){
+function saveZipcode() {
 
- var zipcode = +document.getElementById("pname").value;
+    var zipcode = +document.getElementById("pname").value;
+    var location = binarySearch(allZipcodes, zipcode);
+    var isValid = /^[0-9]{5}(?:-[0-9]{4})?$/.test(zipcode);
+    if (isValid){
+        window.location.href = '../mapPage.html';
+    }
+    else {
+    alert('NotValid ZipCode');
+    window.location.href = '../StudentLogin/newstudent.html';
+    return;
+    }
 
- var location = binarySearch(allZipcodes, zipcode);
 
 // default values of map center is set as the zipcode of stonyBrook 
  var lng = 40.9181595;

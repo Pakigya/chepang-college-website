@@ -8,7 +8,10 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="../css/Signup.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="../css/blog.css" rel="stylesheet">   
+    <link href="../css/blog.css" rel="stylesheet">
+
+
+
 </head>
 <body>
 <nav class="light-blue lighten-1" role="navigation">
@@ -17,8 +20,6 @@
             <img src="../resource/logo.png" alt="Excel to College Logo" style="width:90px;height:80px;" >
             <a class="blog-nav-item active" href="../index.html">Home</a>
         </nav>
-
-
     </div>
 </nav>
 
@@ -73,13 +74,19 @@
 
                 <!-- Select Basic -->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="PTYPE">INCOME</label>
+                    <label class="col-md-4 control-label" for="PTYPE">Income less than $100,000?</label>
                     <div class="col-md-4">
-                        <select id="PTYPE" name="PTYPE" class="form-control">
-                            <option value="1">LESS THAN $50000</option>
-                            <option value="2">$50000 - $100000</option>
-                            <option value="3">MORE THAN $ 100000</option>
-                        </select>
+                        <div class="btn-group btn-toggle">
+                            <button class="btn btn-default" data-toggle="collapse" data-target="#collapsible">Yes</button>
+                            <button class="btn btn-primary active" data-toggle="collapse" data-target="#notcollapsible">No</button>
+                        </div>
+                        <div class="well collapse" id="collapsible" onclick="$('#notcollapsible').hide();">
+                             Congratulations. You are qualified for Excelsior Scholarship.
+                        </div>
+                        <div class="well collapse" id="notcollapsible" onclick="$('#collapsible').hide();">
+                            Sorry Not Qualified for Excelsior Scholarship.
+                        </div>
+                        <hr>
                     </div>
                 </div>
 
@@ -88,16 +95,22 @@
                     <label class="col-md-4 control-label" for="button1idFFF"></label>
                     <div class="col-md-8 row">
                         <div class="ol-md-8">
-                            <a href="../mapPage.html" onclick="saveZipcode()" id="button1idFFF" name="button1idFFF" class="btn btn-success">SEARCH COLLEGES</a>
+                            <a onclick="saveZipcode()" id="button1idFFF" name="button1idFFF" class="btn btn-success">SEARCH COLLEGES</a>
                         </div>
                     </div>
                 </div>
             </fieldset>
         </form>
 
+    </div>
 
-        <script src="../../dist/js/bootstrap.min.js"></script>
-        <script src="../js/searchAlgorithmForCriteriaPage.js"></script>>
+</div>
+
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../js/searchAlgorithmForCriteriaPage.js"></script>>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 </html>
 
