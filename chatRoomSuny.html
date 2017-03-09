@@ -12,7 +12,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6NWluoaLxqxk7y59RhHflfmwSekKwtM0"></script>
     <script type="text/javascript" src="./js/googleMaps.js"></script>
 </head>
-<body>
+<body onload="loadFacebookPage()">
 
 <!-- Facebook Script -->
 <div id="fb-root"></div>
@@ -49,8 +49,11 @@
             <iframe width="100%" height="458" src="https://collegediscussion.chatovod.com/" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="col s4">
+        
             <!-- Grey navigation panel -->
-            <div class="fb-page" data-href="https://www.facebook.com/stonybrooku/?ref=br_rs" data-tabs="timeline" data-width="480" data-height="520" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/stonybrooku/?ref=br_rs" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/stonybrooku/?ref=br_rs">Stony Brook University</a></blockquote></div></div>
+             <div id="facebook">
+            </div>
+          
     </div>
 </div>
 
@@ -84,6 +87,7 @@
 <!--  Scripts-->
 <script src="js/materialize.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/chatRoom.js"></script>
 
 </body>
 </html>
