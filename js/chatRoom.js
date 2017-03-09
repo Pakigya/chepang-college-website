@@ -58,7 +58,7 @@ var collegeFacebookUrl = [
 [48,"DownstateStuAdm"],
 [49,"Forestry-and-Environmental-Science-Society-88007037602"],
 [50,"sunyopt"],
-[51,"groups/StonyBrook2018"],
+[51,"stonybrooku"],
 [52,"UpstateMedicalUniversity"],
 [53,"AlfredStateCollege"],
 [54,"suny.canton"],
