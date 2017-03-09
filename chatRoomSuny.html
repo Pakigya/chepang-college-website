@@ -1,101 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Excel to College</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Excel to College</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
-  
-
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <script src="./js/materialize.js"></script>
-
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6NWluoaLxqxk7y59RhHflfmwSekKwtM0"></script>
-
-<script type="text/javascript" src="./js/googleMaps.js"></script>
-
-
-  
-  </head>
+    <script type="text/javascript" src="./js/googleMaps.js"></script>
+</head>
 <body>
 
-<!-  js for facebook page->
+<!-- Facebook Script -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-  <nav class="light-blue lighten-1" role="navigation">
-   <div class="nav-wrapper container">
-
-      <img src="resource/logo.png" alt="Excel to College Logo" style="width:70px;height:60px; padding-right: 10px;">
-      <a id="logo-container" href="index.html" class="brand-logo">Excel To College</a>
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
 
-      <ul class="right hide-on-med-and-down">
-        <li><a href="https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="_blank">Free Tution NYC Excelsior scholarship</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship">Free Tution NYC</a></li>
-      </ul>
+<nav class="light-blue lighten-1" role="navigation">
+    <div>
+        <img src="resource/logo.png" alt="Excel to College Logo" style="width:70px;height:60px; padding-right: 10px;">
+        <a id="logo-container" href="index.html" class="brand-logo">Excel To College</a>
     </div>
-  </nav>
-  <div>
 
+</nav>
 
-<div class="row">
+<div class="grey lighten-5"> <!-- Back ground for hte chatroom  -->
+    <div class="row">
+        <div class="col s8">
+            <!-- Teal page content  -->
+            <ul class="pagination">
+                <li class="active btn"><a href="https://admissiondiscussion.chatovod.com">Admissions</a></li>
+                <li class="active btn"><a href="https://AcademicDiscussion.chatovod.com">Academics</a></li>
+                <li class="active btn"><a href="https://AthleticsDiscussion.chatovod.com">Athletics</a></li>
+                <li class="active btn"><a href="https://CampusLifeDiscussion.chatovod.com">Campus Life</a></li>
+                <li class="active btn"><a href="https://DormDiscussion.chatovod.com">Dorms</a></li>
+            </ul>
+            <iframe width="100%" height="458" src="https://collegediscussion.chatovod.com/" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col s4">
+            <!-- Grey navigation panel -->
+            <div class="fb-page" data-href="https://www.facebook.com/stonybrooku/?ref=br_rs" data-tabs="timeline" data-width="480" data-height="520" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/stonybrooku/?ref=br_rs" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/stonybrooku/?ref=br_rs">Stony Brook University</a></blockquote></div></div>
+    </div>
+</div>
 
-      <div class="col s9">
-        <!-- Teal page content  -->
-          <ul class="pagination">
+<ul class="collapsible" data-collapsible="accordion">
 
-  
-    <li class="active"><a href="">Admissions</a></li>
-    <li class="active"><a href="">Academics</a></li>
-    <li class="active"><a href="">Athletics</a></li>
-    <li class="active"><a href="">Campus Life</a></li>
-    <li class="active"><a href="">Dorms</a></li>
-    <li class="active"><a href="">cafeteria</a></li>
-    
+    <li>
+        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+</ul>
 
-  </ul>
-
-   
-    <iframe width="100%" height="458" src="https://collegediscussion.chatovod.com/" frameborder="0" allowfullscreen></iframe>
-
-      </div>
-
-  <div class="col s3">
-        <!-- Grey navigation panel -->
-<div class="fb-page" data-href="https://www.facebook.com/stonybrooku/?ref=br_rs" data-tabs="timeline" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/stonybrooku/?ref=br_rs" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/stonybrooku/?ref=br_rs">Stony Brook University</a></blockquote></div>
-
-  </div>
-
-  </div>
-
-
-
-  <footer class="page-footer orange">
-    
+<footer class="page-footer orange">
     <div class="footer-copyright">
-      <div class="container">
-
-      </div>
+        <div class="container">
+            © 2017 Copyright Chepang
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
     </div>
-  </footer>
+</footer>
+<!--  Scripts-->
+<script src="js/materialize.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-
-  </body>
+</body>
 </html>

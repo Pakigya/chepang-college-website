@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Excel to College</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Excel to College</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
 
 
 </head>
 <body  onload="listColleges()">
-  <nav class="light-blue lighten-1" role="navigation">
+<nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
-    
-      <img src="resource/logo.png" alt="Excel to College Logo" style="width:70px;height:60px; padding-right: 10px;">
-      <a id="logo-container" href="index.html" class="brand-logo">Excel To College</a>
 
-      <ul class="right hide-on-med-and-down">
-        <li><a href="https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="_blank">Free Tution NYC Excelsior scholarship</a></li>
-      </ul>
+        <img src="resource/logo.png" alt="Excel to College Logo" style="width:70px;height:60px; padding-right: 10px;">
+        <a id="logo-container" href="index.html" class="brand-logo">Excel To College</a>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship">Free Tution NYC</a></li>
-      </ul>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="_blank">Free Tution NYC Excelsior scholarship</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship">Free Tution NYC</a></li>
+        </ul>
     </div>
-  </nav>
-  
-  <div>
+</nav>
 
-   <h6 class= "left-align" >Search Results in List View:  <a class="waves-effect waves-light btn" href="mapPage.html"> Go to Map View</a> </h6> 
- 
-    <h5 class="center" >Colleges found according to your search: </h> 
- 
-  </div>
-   
-   
-    <br><br>
-	  
-  <div class="container">
-	  <div id="listView">
+<nav>
+    <div class="nav-wrapper">
+        <form>
+            <div class="input-field ">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+            </div>
+        </form>
+    </div>
+</nav>
 
-  	</div>
+<!--
+<div>
+ <h6 class= "left-align" >Search Results in List View:  <a class="waves-effect waves-light btn" href="mapPage.html"> Go to Map View</a> </h6>
+  <h5 class="center" >Colleges found according to your search: </h5>
+</div>
+ -->
 
-	</div>
-	
-      <br><br>
+<br><br>
 
-  
-  <footer class="page-footer orange">
-  
+<div class="container">
+    <div id="listView">
+    </div>
+</div>
+
+
+<footer class="page-footer orange">
+    <div class="container">
+        <div class="row">
+            <div class="col l8 s12">
+                <h5 class="white-text">About us</h5>
+                <p class="grey-text text-lighten-4">We are team CHEPANG from Stony Brook University. Dedicated towards changing the future of education  with innovative technologies. </p>
+            </div>
+            <div class="col l4 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" >chepang.edu@gmail.com</a></li>
+                    <li><a class="white-text" >Stony Brook University</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="footer-copyright">
-      <div class="container">
-      </div>
+        <div class="container">
+            © 2017 Copyright Chepang
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
     </div>
-  </footer>
+</footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/listView.js"></script>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/listView.js"></script>
 
-  </body>
+</body>
 </html>
