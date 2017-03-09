@@ -8,7 +8,6 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   
 
@@ -19,9 +18,20 @@
 <script type="text/javascript" src="./js/googleMaps.js"></script>
 
 
-    
+  
   </head>
 <body>
+
+<!-  js for facebook page->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
   <nav class="light-blue lighten-1" role="navigation">
    <div class="nav-wrapper container">
 
@@ -39,9 +49,13 @@
     </div>
   </nav>
   <div>
-   <h4 align="center">Welcome to SUNY Chatroom 
 
-  <ul class="pagination">
+
+<div class="row">
+
+      <div class="col s9">
+        <!-- Teal page content  -->
+          <ul class="pagination">
 
   
     <li class="active"><a href="">Admissions</a></li>
@@ -54,15 +68,21 @@
 
   </ul>
 
-    </h4> 
-  </div>
-
- <div class="container">
    
     <iframe width="100%" height="458" src="https://collegediscussion.chatovod.com/" frameborder="0" allowfullscreen></iframe>
 
+      </div>
+
+  <div class="col s3">
+        <!-- Grey navigation panel -->
+<div class="fb-page" data-href="https://www.facebook.com/stonybrooku/?ref=br_rs" data-tabs="timeline" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/stonybrooku/?ref=br_rs" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/stonybrooku/?ref=br_rs">Stony Brook University</a></blockquote></div>
+
   </div>
- 
+
+  </div>
+
+
+
   <footer class="page-footer orange">
     
     <div class="footer-copyright">
@@ -76,7 +96,6 @@
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
   </body>
 </html>
