@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db0d49ca-d358-4fcc-b9b5-1290c5b5517e" name="Default" comment="- chatroom updates !">
+    <list default="true" id="db0d49ca-d358-4fcc-b9b5-1290c5b5517e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/stonybrook.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatRoomSuny.html" afterPath="$PROJECT_DIR$/chatRoomSuny.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/listView.html" afterPath="$PROJECT_DIR$/listView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mapPage.html" afterPath="$PROJECT_DIR$/mapPage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mapPageList.html" afterPath="$PROJECT_DIR$/mapPageList.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,16 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="newstudent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StudentLogin/newstudent.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -45,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chatRoomSuny.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="chatRoomSuny.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chatRoomSuny.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="290">
+              <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -57,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="materialize.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="materialize.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/materialize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="8037" column="5" lean-forward="false" selection-start-line="8037" selection-start-column="5" selection-end-line="8037" selection-end-column="5" />
+            <state relative-caret-position="299">
+              <caret line="8034" column="6" lean-forward="true" selection-start-line="8034" selection-start-column="6" selection-end-line="8034" selection-end-column="6" />
               <folding>
                 <marker date="1489034703000" expanded="true" signature="168959:168966" ph="&amp;##9660;" />
                 <marker date="1489034703000" expanded="true" signature="243873:243902" ph="..." />
@@ -104,7 +92,7 @@
       <file leaf-file-name="testSuny.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testSuny.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
+            <state relative-caret-position="510">
               <caret line="53" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -171,8 +159,8 @@
         <option value="$PROJECT_DIR$/mapPage.html" />
         <option value="$PROJECT_DIR$/listView.html" />
         <option value="$PROJECT_DIR$/testSuny.html" />
-        <option value="$PROJECT_DIR$/chatRoomSuny.html" />
         <option value="$PROJECT_DIR$/js/materialize.js" />
+        <option value="$PROJECT_DIR$/chatRoomSuny.html" />
       </list>
     </option>
   </component>
@@ -225,7 +213,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="StudentLogin" />
+              <option name="myItemId" value="resource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -239,7 +227,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="mapIcons" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,12 +241,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="mapIcons" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="materialize.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
+              <option name="myItemId" value="homePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -283,6 +271,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resource" />
       <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
@@ -832,7 +821,7 @@
       <workItem from="1488864135160" duration="285000" />
       <workItem from="1488864802649" duration="264000" />
       <workItem from="1488866781374" duration="432000" />
-      <workItem from="1488900036796" duration="18995000" />
+      <workItem from="1488900036796" duration="20510000" />
     </task>
     <task id="LOCAL-00001" summary="@Biki&#10;&#10;- Change in the Signup Page and introduction of newstudentpage&#10;- Included Logo">
       <created>1488083792401</created>
@@ -876,11 +865,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488926284191</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- chatroom updates !">
+      <created>1489034753026</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1489034753027</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34772000" />
+    <option name="totallyTimeSpent" value="36287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="23" width="1343" height="846" extended-state="0" />
@@ -930,7 +926,8 @@
     <MESSAGE value="- added Changes new" />
     <MESSAGE value="- Links to sign up and students now working." />
     <MESSAGE value="- updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updates" />
+    <MESSAGE value="- chatroom updates !" />
+    <option name="LAST_COMMIT_MESSAGE" value="- chatroom updates !" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1040,11 +1037,6 @@
         <state relative-caret-position="540">
           <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/logo.png">
@@ -1191,9 +1183,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/materialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="8034" column="6" lean-forward="true" selection-start-line="8034" selection-start-column="6" selection-end-line="8034" selection-end-column="6" />
+          <folding>
+            <marker date="1489034703000" expanded="true" signature="168959:168966" ph="&amp;##9660;" />
+            <marker date="1489034703000" expanded="true" signature="243873:243902" ph="..." />
+            <marker date="1489034703000" expanded="true" signature="244163:244173" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testSuny.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
+        <state relative-caret-position="510">
           <caret line="53" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1201,24 +1205,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatRoomSuny.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/mapIcons/homePage/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/materialize.js">
+    <entry file="file://$PROJECT_DIR$/resource/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatRoomSuny.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="8037" column="5" lean-forward="false" selection-start-line="8037" selection-start-column="5" selection-end-line="8037" selection-end-column="5" />
+        <state relative-caret-position="290">
+          <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
           <folding>
-            <marker date="1489034703000" expanded="true" signature="168959:168966" ph="&amp;##9660;" />
-            <marker date="1489034703000" expanded="true" signature="243873:243902" ph="..." />
-            <marker date="1489034703000" expanded="true" signature="244163:244173" ph="..." />
+            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
