@@ -145,7 +145,7 @@ var infoWindowSummary=[];
             '<p>Total In-state: $21,662<br>NY Excelsior Scholarship:  - $8,430  </p>'+
             '<b>Total In-state: $1200 <br>Total per year(excluding housing)  </b>'+
 
-             '<p>Gradute without any debt with help of NY exelsior scholarship. <br> Learn more at:<br><a href= "https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="target="_blank""> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</a></p>'+
+             '<p>Graduate without any debt with help of NY excelsior scholarship. <br> Learn more at:<br><a href= "https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="target="_blank""> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</a></p>'+
              
              '<b> Get your questions answered from our current students. </b>'+
              '<form action="chatRoomSuny.html" method="get" ><br><a href = "https://collegediscussion.chatovod.com"><button type="submit" text-align:center><h5>Speak with our Students<br></h5></button></a></form>'+
@@ -157,7 +157,7 @@ var infoWindowSummary=[];
  for( i = 61; i < markers.length; i++ ) {
 
   infoWindowSummary[i] = '<div id="iw-container">' +
-                    '<div class="iw-title">'+markers[i][1]+"     " +'<img src="mapIcons/tick.png" alt="" padding ="15" height="22" width="22"><a href="chatRoomSuny.html" onClick ="saveCollegeForFacebook('+i+')">Speak With our Students</a>' +'</div>' +
+                    '<div class="iw-title">'+markers[i][1]+"     " +'<img src="mapIcons/tick.png" alt="" padding ="15" height="22" width="22"><a href="chatRoomCuny.html" onClick ="saveCollegeForFacebook('+i+')">Speak With our Students</a>' +'</div>' +
                     '<div class="iw-content">' +
                       '<img src="mapIcons/collegeIcons/'+markers[i][4]+'" alt="'+markers[i][1]+'" height="115" width="83">' +
                       '<p> '+markers[i][1]+' is home to an exceptionally diverse student body of more than 25,700 high-achieving students including more than 17,000 undergraduates from nearly all 50 states and more than 150 countries.</p>'+
@@ -169,7 +169,7 @@ var infoWindowSummary=[];
             '<p>Total In-state: $21,662<br>NY Excelsior Scholarship:  - $8,430  </p>'+
             '<b>Total In-state: $1200 <br>Total per year(excluding housing)  </b>'+
 
-             '<p>Gradute without any debt with help of NY exelsior scholarship. <br> Learn more at:<br><a href= "https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="target="_blank""> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</a></p>'+
+             '<p>Gradute without any debt with help of NY excelsior scholarship. <br> Learn more at:<br><a href= "https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="target="_blank""> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</a></p>'+
              
              '<b> Get your questions answered from our current students. </b>'+
              '<form action="chatRoomCuny.html" method="get" ><br><a href = "https://collegediscussion.chatovod.com"><button type="submit" text-align:center><h5>Speak with our Students<br></h5></button></a></form>'+
@@ -282,6 +282,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 function saveCollegeForFacebook(id){
 
   localStorage.setItem("collegeId", id );
- // alert(id);
+  //alert(id);
 
 }

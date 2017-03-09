@@ -1,8 +1,9 @@
 
 
-var collegeId = parseInt(localStorage.getItem("collegeId"));
+var collegeId = 51;
+collegeId = parseInt(localStorage.getItem("collegeId"));
 
-	alert(collegeId);
+	//alert(collegeId);
 
 var collegeFacebookUrl = [
 
@@ -101,7 +102,13 @@ function loadFacebookPage(){
 
     div.innerHTML +=   '<div class="fb-page" data-href="https://www.facebook.com/'+collegeFacebookUrl[collegeId][1]+'/?ref=br_rs" data-tabs="timeline" data-width="480" data-height="520" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/'+collegeFacebookUrl[collegeId][1]+'/?ref=br_rs" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/'+collegeFacebookUrl[collegeId][1]+'/?ref=br_rs"></a></blockquote></div></div>';
 
-	alert(collegeId);
+	//alert(collegeId);
 
   document.getElementById('facebook').appendChild(div);
+
+}
+
+
+function setURL(url){
+    document.getElementById('iframe').src = url;
 }

@@ -26,11 +26,14 @@
 </script>
 
 
-
 <nav class="light-blue lighten-1" role="navigation">
     <div>
         <img src="resource/logo.png" alt="Excel to College Logo" style="width:70px;height:60px; padding-right: 10px;">
         <a id="logo-container" href="index.html" class="brand-logo">Excel To College</a>
+
+        <div  style="float: right; padding: 15px" >
+         <a href="index.html" class="right-align">Sign Out</a>
+         </div>
     </div>
 
 </nav>
@@ -40,13 +43,15 @@
         <div class="col s8">
             <!-- Teal page content  -->
             <ul class="pagination">
-                <li class="active btn"><a href="https://admissiondiscussion.chatovod.com">Admissions</a></li>
-                <li class="active btn"><a href="https://AcademicDiscussion.chatovod.com">Academics</a></li>
-                <li class="active btn"><a href="https://AthleticsDiscussion.chatovod.com">Athletics</a></li>
-                <li class="active btn"><a href="https://CampusLifeDiscussion.chatovod.com">Campus Life</a></li>
-                <li class="active btn"><a href="https://DormDiscussion.chatovod.com">Dorms</a></li>
+                <li class="active btn"><a onclick="setURL('https://admissiondiscussion.chatovod.com')">Admissions</a></li>
+                <li class="active btn"><a onclick="setURL('https://AcademicDiscussion.chatovod.com')">Academics</a></li>
+                <li class="active btn"><a onclick="setURL('https://AthleticsDiscussion.chatovod.com')">Athletics</a></li>
+                <li class="active btn"><a onclick="setURL('https://CampusLifeDiscussion.chatovod.com')">Campus Life</a></li>
+                <li class="active btn"><a onclick="setURL('https://DormDiscussion.chatovod.com')">Excelsior </a></li>
             </ul>
-            <iframe width="100%" height="458" src="https://collegediscussion.chatovod.com/" frameborder="0" allowfullscreen></iframe>
+            <div id="frame">
+                <iframe id="iframe" width="100%" height="458" src="https://admissiondiscussion.chatovod.com" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
         <div class="col s4">
         
