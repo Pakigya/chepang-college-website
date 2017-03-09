@@ -145,7 +145,7 @@ var infoWindowSummary=[];
             '<p>Total In-state: $21,662<br>NY Excelsior Scholarship:  - $8,430  </p>'+
             '<b>Total In-state: $1200 <br>Total per year(excluding housing)  </b>'+
 
-             '<p>Gradute without any debt with help of NY exelsior scholarship. <br> Learn more at:<br><a href= "https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="target="_blank""> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</a></p>'+
+             '<p>Graduate without any debt with help of NY excelsior scholarship. <br> Learn more at:<br><a href= "https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="target="_blank""> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</a></p>'+
              
              '<b> Get your questions answered from our current students. </b>'+
              '<form action="chatRoomSuny.html" method="get" ><br><a href = "https://collegediscussion.chatovod.com"><button type="submit" text-align:center><h5>Speak with our Students<br></h5></button></a></form>'+
@@ -169,7 +169,7 @@ var infoWindowSummary=[];
             '<p>Total In-state: $21,662<br>NY Excelsior Scholarship:  - $8,430  </p>'+
             '<b>Total In-state: $1200 <br>Total per year(excluding housing)  </b>'+
 
-             '<p>Gradute without any debt with help of NY exelsior scholarship. <br> Learn more at:<br><a href= "https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="target="_blank""> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</a></p>'+
+             '<p>Gradute without any debt with help of NY excelsior scholarship. <br> Learn more at:<br><a href= "https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship" target="target="_blank""> https://www.ny.gov/programs/tuition-free-degree-program-excelsior-scholarship</a></p>'+
              
              '<b> Get your questions answered from our current students. </b>'+
              '<form action="chatRoomCuny.html" method="get" ><br><a href = "https://collegediscussion.chatovod.com"><button type="submit" text-align:center><h5>Speak with our Students<br></h5></button></a></form>'+
