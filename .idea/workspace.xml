@@ -4,7 +4,6 @@
     <list default="true" id="db0d49ca-d358-4fcc-b9b5-1290c5b5517e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/currentStudentView.html" afterPath="$PROJECT_DIR$/currentStudentView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/chatRoom.js" afterPath="$PROJECT_DIR$/js/chatRoom.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,14 +55,16 @@
       <file leaf-file-name="currentStudentView.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/currentStudentView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-520">
-              <caret line="48" column="43" lean-forward="false" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+            <state relative-caret-position="320">
+              <caret line="172" column="180" lean-forward="false" selection-start-line="172" selection-start-column="180" selection-end-line="172" selection-end-column="180" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#li#2;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -162,7 +163,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
+    <option name="x" value="30" />
     <option name="y" value="23" />
     <option name="width" value="1343" />
     <option name="height" value="846" />
@@ -794,7 +795,7 @@
       <workItem from="1488864135160" duration="285000" />
       <workItem from="1488864802649" duration="264000" />
       <workItem from="1488866781374" duration="432000" />
-      <workItem from="1488900036796" duration="26546000" />
+      <workItem from="1488900036796" duration="27427000" />
     </task>
     <task id="LOCAL-00001" summary="@Biki&#10;&#10;- Change in the Signup Page and introduction of newstudentpage&#10;- Included Logo">
       <created>1488083792401</created>
@@ -866,14 +867,21 @@
       <option name="project" value="LOCAL" />
       <updated>1489066261283</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- update to the wall">
+      <created>1489068882596</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1489068882597</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42323000" />
+    <option name="totallyTimeSpent" value="43204000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="23" width="1343" height="846" extended-state="0" />
+    <frame x="30" y="23" width="1343" height="846" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -922,7 +930,8 @@
     <MESSAGE value="- updates" />
     <MESSAGE value="- chatroom updates !" />
     <MESSAGE value="- currentStudentView update." />
-    <option name="LAST_COMMIT_MESSAGE" value="- currentStudentView update." />
+    <MESSAGE value="- update to the wall" />
+    <option name="LAST_COMMIT_MESSAGE" value="- update to the wall" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1230,14 +1239,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/currentStudentView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-520">
-          <caret line="48" column="43" lean-forward="false" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+        <state relative-caret-position="320">
+          <caret line="172" column="180" lean-forward="false" selection-start-line="172" selection-start-column="180" selection-end-line="172" selection-end-column="180" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#li#2;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
