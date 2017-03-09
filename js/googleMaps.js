@@ -157,7 +157,7 @@ var infoWindowSummary=[];
  for( i = 61; i < markers.length; i++ ) {
 
   infoWindowSummary[i] = '<div id="iw-container">' +
-                    '<div class="iw-title">'+markers[i][1]+"     " +'<img src="mapIcons/tick.png" alt="" padding ="15" height="22" width="22"><a href="chatRoomSuny.html" onClick ="saveCollegeForFacebook('+i+')">Speak With our Students</a>' +'</div>' +
+                    '<div class="iw-title">'+markers[i][1]+"     " +'<img src="mapIcons/tick.png" alt="" padding ="15" height="22" width="22"><a href="chatRoomCuny.html" onClick ="saveCollegeForFacebook('+i+')">Speak With our Students</a>' +'</div>' +
                     '<div class="iw-content">' +
                       '<img src="mapIcons/collegeIcons/'+markers[i][4]+'" alt="'+markers[i][1]+'" height="115" width="83">' +
                       '<p> '+markers[i][1]+' is home to an exceptionally diverse student body of more than 25,700 high-achieving students including more than 17,000 undergraduates from nearly all 50 states and more than 150 countries.</p>'+
@@ -282,6 +282,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 function saveCollegeForFacebook(id){
 
   localStorage.setItem("collegeId", id );
- // alert(id);
+  //alert(id);
 
 }
