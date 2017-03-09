@@ -8618,7 +8618,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 #map-canvas {
     margin: 0;
     padding: 0;
-    height: 572px;
+    height: 560px;
     max-width: none;
 }
 #map-canvas img {

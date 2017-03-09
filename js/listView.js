@@ -118,9 +118,8 @@ function listColleges(){
       '</div>'+
     '</div>'+
   '</div>';
-
-  
  }
+ 
   document.getElementById('listView').appendChild(div);
 }
 
