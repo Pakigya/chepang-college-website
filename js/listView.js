@@ -90,7 +90,6 @@ var markers = [
 
 function listColleges(){
 
-
  var div = document.createElement('div');
 
     div.className = 'listView';
