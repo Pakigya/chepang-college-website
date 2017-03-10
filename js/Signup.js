@@ -1,7 +1,7 @@
 function initApp() {
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
-            window.location.href = '../mapPage.html';
+            window.location.href = '../currentStudentView.html';
         } else {
             // User is signed out.
         }
