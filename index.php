@@ -103,6 +103,11 @@
   </div>
 
 
+<div class="container">
+
+  <img src="mapIcons/team.png" height=100% width=100%>   
+
+</div>
 
 
   <!-- Reference: http://avexdesigns.com/responsive-youtube-embed/ -->
@@ -132,6 +137,15 @@
           <h5 class="white-text">About us</h5>
           <p class="grey-text text-lighten-4">We are team CHEPANG from Stony Brook University. Dedicated towards changing the future of education  with innovative technologies. </p>
 
+<!-- hitwebcounter Code START -->
+<a href="http://www.hitwebcounter.com" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=6616907&style=0024&nbdigits=5&type=ip&initCount=0" title="." Alt="."   border="0" >
+</a>                                        <br/>
+                                        <!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com" title="My Traffic Estimate" 
+                                        target="_blank" style="font-family: Geneva, Arial, Helvetica; 
+                                        font-size: 11px; color: #85948C; text-decoration: underline ;"><em>                                 </em>
+                                        </a>   
+                            
 
         </div>
         <div class="col l3 s12">
